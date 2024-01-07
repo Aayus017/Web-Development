@@ -1,0 +1,980 @@
+styles.css
+/*STRUCTURAL ELEMENTS------------------------------------------------------------*/
+*{
+	opacity: 1;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+header{
+	display: flex;
+    width: auto;
+	background-color: #FFFFFF;
+	align-items: center;
+	height: auto;
+}
+nav{
+    background-color: #00356b;
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+	z-index: 999;
+}
+nav ul{
+	list-style-type: none;
+	padding: 0; 
+	margin: 0;
+}
+nav ul li {
+	text-align: center;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 16px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+main{
+	color: #000000;
+	background-color: #FFFFFF;
+	margin: 35px 0px 30px 0px;
+}
+footer{
+	background-color: #222222;
+	color: #FFFFFF;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+	clear: left;
+}
+
+/*OTHER ELEMENTS-----------------------------------------------------------------*/
+a{
+	text-decoration: none;
+}
+a:link{
+	color: #61262A;
+}
+a:visited{
+	color: #026CB6;
+}
+a:hover{
+	color: #F48734;
+}
+a:active{
+	color: #000000;
+}
+nav a{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+nav a:link, .blue a:link, #schedule a:link{
+	color: #FFFFFF;
+}
+nav a:visited, .blue a:visited, #schedule a:visited{
+	color: #FEF4D4;
+}
+nav a:hover, .blue a:hover, #schedule a:hover{
+	color: #D9E9F2;
+}
+nav a:active, .blue a:active, #schedule a:active{
+	color: #708FB8;
+}
+h2 a{
+	text-decoration: underline;
+	margin: 10px 50px 10px 50px;
+}
+h3 a{
+	text-decoration: underline;
+}
+h1{
+	color: #00356b;
+    font-size: 60px;
+	width: auto;
+	font-family: "Times New Roman", Georgia, serif;
+	margin: 0;
+	padding: 15px 30px 15px 0;
+}
+h2{
+	width: auto;
+	font-size: 36px;
+	color: #00356b;
+	margin: 0 50px 10px 50px;
+}
+h3{
+	width: auto;
+	font-size: 25px;
+	color: #00356b;
+	margin: 10px 50px 10px 50px;
+	padding: 0;
+}
+p, li{
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	line-height: 25px;
+}
+p, form{
+	margin: 10px 50px 10px 50px;
+}
+ol li{
+	padding-bottom: 5px;
+	margin-right: 50px;
+}
+sup{
+	padding-right: 10px;
+	margin-top: 0;
+}
+footer a:link{
+	color: #FFFFFF;
+}
+footer a:visited{
+	color: #FEF4D4;
+}
+footer a:hover{
+	color: #D9E9F2;
+}
+footer a:active{
+	color: #708FB8;
+}
+
+/*ID DEFINITIONS-----------------------------------------------------------------*/
+#wrapper{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+#coa{ /*applied to the Coat of Arms img in header*/
+	height: 80px;
+	width: auto;
+	float: left;
+	padding: 25px 40px 25px 30px;
+}
+#heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#aboutQuote{ /*applied to About page: first div element in main*/
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	padding-top: 0;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+}
+#aboutQuoteText{ /*applied to About page: paragraph element of first div element in main*/
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+	font-weight: bold;
+	background-color: #D9E9F2;
+	width: 75%;
+}
+#missionHead{ /*applied to About page: h2 of second div element in main "Mission Statement"*/
+	padding-bottom: 5px;
+	margin-left: 0;
+}
+#degrees{ /*applied to About page: third div element in main*/
+	width: auto;
+	padding-bottom: 35px;
+	background-color: #FEF4D4;
+	margin: 30px 0 30px 0;
+}
+#degreesHead{ /*applied to About page: h2 of third div element in main*/
+	margin: 0;
+	padding: 45px 50px 15px 50px;
+}
+#admissions{
+	font-style: italic;
+	font-size: 70px;
+}
+#undergrad{
+	background-color: #F9BE00;
+	padding: 5px 0 5px 0;
+	border-radius: 15px;
+	width: 85%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+#note{
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	margin: 10px 50px 10px 70px;
+	scroll-margin-top: 40px;
+}
+#supDiv{
+	background-color: #D9E9F2;
+	width: auto;
+	padding: 20px 50px 30px 50px;
+}
+#hideSupLink ol{
+	margin-right: 100px;
+}
+#courses{
+	background-color: #F9BE00;
+	padding: 10px 0 10px 0;
+	border-radius: 15px;
+	text-align: center;
+	font-weight: bold;
+	width: 90%;
+	margin: 0 auto 30px auto;
+}
+#classDiv5, #classDiv1, #classDiv2{
+	margin-right: 20px;
+	line-height: 25px;
+}
+#classDiv3, #classDiv4, #classDiv6{
+	margin-left: 20px;
+	line-height: 25px;
+}
+#applySpace{
+	display: none;
+}
+#classNum1, #classNum2{
+	line-height: 25px;
+}
+#calendarLink{
+	width: auto;
+	font-size: 20px;
+	color: #000000;
+	margin: 10px 50px 20px 100px;
+	padding: 0;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+}
+#calendarLink a{
+	font-weight: bold;
+	text-decoration: underline;
+}
+#eventsList{
+	margin-bottom: 30px;
+}
+#eventsList ul{
+	list-style-type: none;
+}
+#studyAreasLink{
+	margin-left: 100px;
+}
+#img img{
+	margin-left: 50px;
+}
+#clear{
+	clear: left;
+	height: auto;
+}
+/*-------- Home Page --------*/
+#body-top{
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	background-color: #FFFFFF;
+	margin: 50px 0 50px 50px;
+}
+#body-top p{
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+#ysaImg{
+	width: 55%;
+	float: left;
+}
+#ysa{
+	width: 100%;
+}
+#ysaText{
+	width: 100%;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	line-height: 25px;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+#left-content{
+    text-align: center;
+    float: left;
+	width: auto;
+    background-color: #FFFFFF;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	line-height: 25px;
+	height: auto;
+	margin-right: 50px;
+	margin-top: 0;
+}
+#register{
+	font-size: 20px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: 0;
+}
+#libraryImg{
+	padding-top: 10px;
+	width: 100%;
+}
+#artGallery{
+	width: 100%;
+	padding-top: 10px;
+}
+#gallery{
+	margin: 0 0 50px 0;
+	display: block;
+}
+#galleryText{
+	width: 100%;
+	line-height: 25px;
+	font-size: 18px;
+}
+#crs{
+    text-align: center;
+	font-size: 20px;
+	background-color: #D9E9F2;
+	width: 65%;
+	padding: 25px;
+	margin: 50px auto 50px auto;
+	font-weight: bold;
+	clear: both;
+}
+.galleryImg{
+	float: left;
+	margin: 0 50px 30px 50px;
+	margin-top: 0;
+}
+#gallery{
+	display: block;
+	margin-bottom: 50px;
+	margin-top: 0;
+}
+#facultyPage{
+	text-align: center;
+	margin-top: 20px;
+}
+#buttonList{
+	list-style-type: none;
+}
+#contactImg{
+	margin-left: 50px;
+}
+
+/*CLASS DEFINITIONS--------------------------------------------------------------*/
+.heading2{
+	margin: 0 50px 30px 50px;		
+	font-size: 60px;
+}
+.coursesLinks{
+	width: auto;
+	font-size: 20px;
+	color: #000000;
+	margin: 10px 50px 10px 50px;
+	padding: 0;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+}
+.coursesLinks a{
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.font{
+	font-family: Geneva, Verdana, Arial, sans-serif;
+}
+.marginRight{
+	margin-right: 50px;
+}
+.department{
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.superscript{
+	display: flex;
+}
+.section{ /*applied to div elements for spacing between divs*/
+	padding-bottom: 10px;
+}
+.indent{
+	margin: 10px 0px 10px 50px;
+}
+p.indent{
+	margin: 10px 50px 10px 80px;
+}
+.margin{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.pub-image{
+	margin: 10px 50px 10px 50px;
+}
+.pub-sub{
+	display: flex;
+	background-color: #FFFFFF;
+	color: black;
+	border: 2px solid #000000;
+}
+.blockquote{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.blockquoteRef{
+	margin-left: 150px;
+	margin-right: 100px;
+}
+.facultyImg{
+	float: left;
+	margin: 0 50px 30px 50px;
+}
+.facultyStaff{
+	width: 100%;
+	padding-top: 10px;
+}
+.contactUl{
+	margin-left: 40px;
+}
+/*-------- Study Areas --------*/
+.studyArea{
+	margin-right: 50px;
+	height: auto;
+}
+.studyAreaImgDiv{
+	width: 40%;
+	margin: 5px 30px 30px 50px;
+	float: left;
+}
+.studyAreaImg{
+	width: 100%;
+	float: left;
+}
+.studyAreaText{
+	width: 100%;
+}
+
+/*-------- Home Page --------*/
+.side-by-side{
+    background-color: #FFFFFF;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin: 0 0 50px 50px;
+}
+.openHouse{
+	padding-top: 40px;
+}
+.openHouse a{
+	text-decoration: underline;
+	padding: 10px;
+	line-height: 35px;
+}
+.openHouseDates{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.underline{
+	text-decoration: underline;
+}
+.blue{
+	background-color: #00356b;
+	text-align: center;
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	line-height: 25px;
+	font-size: 15px;
+	padding-top: 10px;
+}
+/* Exhibition ------------------------------------------*/
+.poster{
+	margin-top: 10px;
+}
+        /* Hiding */
+  .show-button {
+      display: none;
+ }
+
+         /* Styling the label as a button */
+ .show-button-label {
+       cursor: pointer;
+       background-color: #FCE188;
+       padding: 5px 10px;
+       border: 1px solid #000000;
+       display: inline-block;
+       color: #000000;
+         }
+ .show-button-label_1 {
+			cursor: pointer;
+			background-color: #F9BE00;
+			padding: 5px 10px;
+			border: 1px solid #000000;
+			display: inline-block;
+			color: #000000;
+			  }
+ .show-button-label_2 {
+			cursor: pointer;
+			background-color: #FEF4D4;
+			padding: 5px 10px;
+			border: 1px solid #000000;
+			display: inline-block;
+        	color: #000000;
+				  }
+	 
+
+         /* Styling the content to be hidden by default */
+ .content {
+     display: none;
+         }
+
+         /* Showing the content when the label is clicked */
+ .show-button:checked + .content {
+     display: block;
+         }
+
+         /* Hiding the content when the label is clicked again */
+ .show-button:checked + .show-button-label + .content {
+     display: none;
+         }
+  .calendar {
+     border-collapse: collapse;
+     width: 80%;
+     margin: 20px auto;
+         }
+  .calendar th, .calendar td {
+     padding: 10px;
+     text-align: center;
+     border: 1px solid #000000;
+         }
+  .calendar th {
+    background-color: #527D73;
+     color: #FFFFFF;
+         }
+
+	.border {
+		border: 4px solid #F9BE00;
+		padding: 20px;
+		margin: 20px;
+	}
+ /*Events---------------------*/
+ .event-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #000000; 
+    border-radius: 8px; /* Add rounded corners */
+    color: #000000;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+ #exhibition-link {
+	background-color: #D9E9F2; 
+	width: 85%; 
+	margin: auto;
+	padding: 30px;
+	text-align: center;
+}
+ #exhibition-link a{
+	text-decoration: underline;
+ }
+/*Publications--------------------*/
+.pubSizeTwelve{
+	font-size: 12px;
+}
+.pubSizeSixteen{
+	font-size: 16px;
+}
+.pubSizeEighteen{
+	font-size: 18px;
+}
+.pubSizeTwenty{
+	font-size: 20px;
+	text-decoration: underline;
+}
+.alignText{
+	text-align: center;
+}
+
+/*RESPONSIVE LAYOUT--------------------------------------------------------------*/
+@media (max-width: 600px){
+	nav ul {
+		display: block;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+	}
+	#classListFormatDep{
+		display: block;
+	}
+	#classListFormatNum{
+		display: block;
+	}
+	#classNum1{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#classNum2{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#body-top{
+		display: block;
+		width: auto;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	#ysa{
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	#ysaImg{
+		float: left;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	#ysaText{
+		display: block;
+		clear: left;
+		margin: 0 50px 50px 0;
+	}
+	#left-content{
+		width: 100%;
+		display: block;
+		margin-bottom: 50px;
+		margin-top: 0;
+	}
+	#library{
+		clear: left;
+		width: auto;
+	}
+	#paintbrushImg{
+		width: auto;
+		margin: 50px 50px 0 50px;
+	}
+	#paintbrush{
+		width: 100%;
+	}
+	#missionWhite, #resourcesContent{
+		margin: 30px 50px 30px 50px;
+	}
+	#resourceList{
+		margin-right: 50px;
+	}
+	.side-by-side{
+		display: block;
+		margin-right: 50px;
+	}
+	.blue{
+		width: auto;
+		clear: both;
+	}
+	.event-details {
+        column-count: 1;
+        column-gap: 0;
+    }
+	.pubText{
+		clear: left;
+	}
+	.pub-image{
+		display: block;
+	}
+	.pubImg{
+		float: left;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.pub-sub{
+		display: block;
+	}
+	#guidelines{
+		width: auto;
+		background-color: #FEF4D4;
+		margin: 30px 0 30px 0;
+	}
+	#guidelinesDiv{
+		padding-bottom: 35px;
+		width: auto;
+	}
+	#guidelinesHead{
+		margin: 0;
+		padding: 0 50px 5px 50px;
+	}
+	#applyImgDiv #admissionsimg{
+		width: auto;
+		display: flex;
+		align-items: center;
+		padding: 0 50px;
+	}
+	#studyingImg{
+		width: 100%;
+		margin: 50px 0 40px 0;
+	}
+	#grad{
+		padding: 50px 50px 10px 50px;
+		width: auto;
+		margin: 0;
+	}
+	#gradImg{
+		width: 100%;
+		margin: 0;
+	}
+	#grad div{
+		width: auto;
+	}
+	#grad h2{
+		background-color: #FFFFFF;
+		margin: 0;
+		padding-top: 10px;
+	}
+	.studyAreaImgDiv{
+		width: auto;
+	}
+}
+@media (min-width: 601px) and (max-width: 1024px){
+	nav{
+		position: sticky;
+		top: 0;
+	}
+	nav ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+	#classListFormatDep{
+		display: block;
+	}
+	#classListFormatNum{
+		display: block;
+	}
+	#classNum1{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#classNum2{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#ysaImg{
+		margin-right: 50px;
+	}
+	#ysaText{
+		margin-right: 50px;
+		margin-bottom: 0;
+		width: 45%;
+	}
+	.blue{
+		width: 60%;
+	}
+	#library{
+		margin-right: 50px;
+	}
+	.pubText{
+		clear: left;
+	}
+	.pub-image{
+		display: block;
+	}
+	.pubImg{
+		float: left;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 15px 0 10px 0;
+	}
+	.pub-sub{
+		display: block;
+	}
+	#paintbrushImg{
+		width: auto;
+		margin: 50px 50px 0 50px;
+	}
+	#paintbrush{
+		width: 100%;
+	}
+	#missionWhite, #resourcesContent{
+		margin: 30px 50px 30px 50px;
+	}
+	#guidelines{
+		width: auto;
+		background-color: #FEF4D4;
+		margin: 30px 0 30px 0;
+	}
+	#guidelinesDiv{
+		padding-bottom: 35px;
+		width: auto;
+	}
+	#guidelinesHead{
+		margin: 0;
+		padding: 0 50px 5px 50px;
+	}
+	#admissionsimg{
+		width: auto;
+		display: flex;
+		align-items: center;
+		padding: 0 50px;
+	}
+	#applyImgDiv{
+		width: auto;
+		display: flex;
+		align-items: center;
+		margin: 0 50px;
+	}
+	#studyingImg{
+		width: 100%;
+		margin: 50px 0 40px 0;
+	}
+	#grad{
+		padding: 50px 50px 10px 50px;
+		width: auto;
+		margin: 0;
+	}
+	#gradImg{
+		width: 100%;
+		margin: 0;
+	}
+	#grad div{
+		width: auto;
+	}
+	#grad h2{
+		background-color: #FFFFFF;
+		margin: 0;
+		padding-top: 10px;
+	}
+	.studyAreaImgDiv{
+		width: 40%;
+	}
+	#resourceList{
+		margin-right: 50px;
+	}
+}
+@media (min-width: 1025px){
+	nav{
+		position: sticky;
+		top: 0;
+	}
+	nav ul {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+	
+	#classListFormatNum{
+		display: grid;
+		grid-template-columns: 50%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"classNum1 classNum2";
+	}
+	#classListFormatDep{
+		display: grid;
+		grid-template-columns: 50%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"classDiv2 classDiv3"
+			"classDiv1 classDiv4"
+			"classDiv5 classDiv6";
+	}
+	#ysaImg{
+		margin-right: 50px;
+		width: 45%;
+	}
+	#ysaText{
+		margin-right: 50px;
+		width: 45%;
+	}
+	.blue{
+		width: 60%;
+	}
+	#library{
+		margin-right: 50px;
+	}
+	.pubImg{
+		padding: 15px 0 10px 15px;
+	}
+	#paintbrushImg{
+		display: none;
+	}
+	#missionDiv{
+		width: auto;
+		margin: 50px;
+		background-image: url(images/paintbrush.jpg);
+		background-repeat: no-repeat;
+		background-position: left center;
+		display: flex;
+		align-items: center;
+		border-radius: 25px;
+	}
+	#missionWhite{
+		background-color: #FFFFFF;
+		width: 50%;
+		margin: 50px;
+		padding: 30px;
+		opacity: 0.9;
+		border-radius: 25px;
+	}
+	#guidelines{
+		width: auto;
+		background-color: #FEF4D4;
+		margin: 30px 0 30px 0;
+		display: flex;
+		align-items: center;
+	}
+	#guidelinesDiv{
+		float: left;
+		padding-bottom: 35px;
+		width: 60%;
+	}
+	#guidelinesHead{
+		margin: 0;
+		padding: 45px 50px 5px 50px;
+	}
+	#applyImgDiv, #admissionsimg{
+		width: 40%;
+		display: flex;
+		align-items: center;
+		float: right;
+		padding-left: 50px;
+	}
+	#studyingImg{
+		width: 100%;
+		margin: 50px 0 50px 0;
+	}
+	#grad{
+		padding: 50px;
+		width: auto;
+		position: relative;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin: 0;
+	}
+	#gradImg{
+		width: 100%;
+		margin: 0;
+	}
+	#grad div{
+		width: auto;
+		position: absolute;
+		bottom: 50px;
+		margin: 0;
+	}
+	#grad h2{
+		background-color: #FFFFFF;
+		opacity: 0.9;
+		margin-left: 0;
+		padding: 10px 20px;
+		margin: 0 auto;
+	}
+	.studyAreaImgDiv{
+		width: 40%;
+	}
+	#resourcesDiv{
+		width: auto;
+		border-radius: 25px;
+		margin: 50px;
+		background-image: url(images/yaleRecreation.jpg);
+		background-repeat: no-repeat;
+		background-position: right center;
+		display: flex;
+		justify-content: flex-end;
+	}
+	#resourcesContent{
+		background-color: #fef4d4;
+		border-radius: 25px;
+		width: 50%;
+		margin: 50px;
+		padding: 30px;
+		opacity: 0.9;
+	}
+}

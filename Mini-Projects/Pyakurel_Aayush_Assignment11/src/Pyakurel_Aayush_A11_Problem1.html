@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Purchase memberships</title>
+    <meta charset="utf-8">
+    <style>
+		h3 {	border-bottom: 3px dashed black;		
+				font-style: italic;
+			}
+		label {
+			display: inline-block;
+			width: 20em;
+			text-align:right;
+			font-weight: bold;
+		}
+		#Message{
+		    font-size: 25px;
+		    text-align: center;
+		    font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+    <script>
+		"use strict";
+		var unitPrice = 30, discount;
+		var again = "";
+		var userName, userAddress, userNumber, userEmail, memberships;
+		var originalCost,discountAmount, totalCost;
+		do {
+			discount=0;
+			memberships=0;
+			userName = prompt("Enter your name");
+			userAddress = prompt("Enter your address");
+			userNumber = prompt("Enter your phone number");
+			userEmail = prompt("Enter your email");
+			do {
+				memberships = parseInt(prompt("Enter the number of memberships to purchase (1-100).", "0"));
+				if (isNaN(memberships) || memberships < 1 || memberships > 100) {
+					alert("Please enter a valid number of memberships (1-100)");
+				}
+			}
+			while (isNaN(memberships) || memberships < 1 || memberships > 100);
+
+			if ((memberships >= 30) && (memberships <= 59))
+				discount = 10;
+			else if (memberships >= 60)
+				discount = 15;
+
+			originalCost = unitPrice * memberships;
+			discountAmount = originalCost * discount / 100;
+			totalCost = originalCost - discountAmount;
+
+			const outputHTML = `
+			<h3> Customer Information for ${userName}</h3>
+			<p> <label> Name: </label> ${userName} </p>
+			<p> <label>  Address: </label> ${userAddress} </p>
+			<p> <label>  Phone number: </label> ${userNumber} </p>
+			<p> <label> Email: </label> ${userEmail} </p>
+			<h3>Order Information for ${userName} </h3>
+			<p> <label> Number of memberships purchased: </label> ${memberships} </p>
+			<p> <label>  Cost per membership ($): </label> ${unitPrice} </p>
+			<p> <label>  Total cost before discount ($): </label> ${originalCost} </p>
+			<p> <label>  Discount: </label> ${discount} % / $ ${discountAmount} </p>
+			<p> <label>  Total cost after discount ($): </label> ${totalCost} </p>
+			`;
+			document.write(outputHTML);
+			again = prompt("Would you like to use this application again? y/n");
+		} while (again == "y")
+
+		document.write("<div id='Message'>Thanks for using the Order application!</div>>");
+
+	</script>
+</body>
+</html>
